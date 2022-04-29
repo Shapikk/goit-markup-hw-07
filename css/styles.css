@@ -207,13 +207,13 @@ span.studio {
 .site__about:not(:last-child) {
   margin-right: 0;
 }
-.site__image {
+.container__list {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
 }
-.img-g {
+.container__image {
   margin-right: 30px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -222,7 +222,7 @@ span.studio {
 
   position: relative;
 }
-.img-g:last-child {
+.container__image:last-child {
   margin-right: 0;
 }
 
@@ -238,7 +238,7 @@ span.studio {
   border-radius: 4px;
 }
 
-.top {
+.container__names {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -262,27 +262,27 @@ span.studio {
 .section-com {
   background-color: #f5f4fa;
 }
-.site-names {
+.div__names {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   margin-bottom: 10px;
 }
-.site-com {
+.container__site {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
 }
-.site-job {
+.div__about {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 16px;
 }
-.site-htwo {
+.container__name {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
@@ -290,11 +290,11 @@ span.studio {
   margin-top: 0;
   margin-bottom: 50px;
 }
-.site-div {
+.container__div {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.icons-media {
+.div__icons {
   display: flex;
   justify-content: center;
   padding-left: 0;
@@ -310,7 +310,7 @@ span.studio {
 .icon-media:not(:last-child) {
   margin-right: 10px;
 }
-.icon-media-list {
+.icon-media__list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -322,25 +322,25 @@ span.studio {
   transition: background-color 250ms var(--o-transition-timing-function),
     fill 250ms var(--o-transition-timing-function);
 }
-.icon-media-list:hover,
-.icon-media-list:focus {
+.icon-media__list:hover,
+.icon-media__list:focus {
   background-color: var(--address-color);
   fill: var(--icon-colors);
 }
 /*Секция 5*/
-.site-clients {
+.container__emblem {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
 }
-.icons-medias {
+.emblem-list {
   margin-right: 0;
 }
-.icons-medias:not(:last-child) {
+.emblem-list:not(:last-child) {
   margin-right: 30px;
 }
-.icons-medias-li {
+.emblem-list__li {
   width: 170px;
   height: 92px;
 
@@ -356,14 +356,14 @@ span.studio {
   transition: border 250ms var(--o-transition-timing-function),
     fill 250ms var(--o-transition-timing-function);
 }
-.icons-medias-li:hover,
-.icons-medias-li:focus {
+.emblem-list__li:hover,
+.emblem-list__li:focus {
   border: 1px solid #2196f3;
   fill: var(--address-color);
 }
 
 /* Footer*/
-.fotterss {
+.footer__site {
   display: flex;
   align-items: baseline;
 }
@@ -378,7 +378,7 @@ span.studio {
   margin-bottom: 20px;
   display: block;
 }
-.footer-site {
+.footer {
   background-color: #2f303a;
 
   padding-top: 60px;
@@ -395,7 +395,7 @@ span.studio-two {
   font-style: normal;
   margin: 0;
 }
-.site-address .link {
+.address__site .link {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   font-size: 14px;
@@ -408,8 +408,8 @@ span.studio-two {
 .site-nav:not(:first-child) {
   margin-bottom: 0;
 }
-.site-address .link:hover,
-.site-address .link:focus {
+.address__site .link:hover,
+.address__site .link:focus {
   color: var(--address-color);
 }
 .mail-tell:not(:last-child) {
@@ -424,23 +424,23 @@ span.studio-two {
   letter-spacing: 0.03em;
 }
 
-.follow-list {
+.follow__list {
   display: flex;
   padding-left: 0;
   list-style: none;
   margin: 0;
 }
-.icon-medias {
+.follow__nav {
   width: 44px;
   height: 44px;
   border-radius: 50%;
   margin-right: 0x;
   padding: 0;
 }
-.icon-medias:not(:last-child) {
+.follow__nav:not(:last-child) {
   margin-right: 10px;
 }
-.follow-li {
+.follow__icon {
   display: flex;
   width: 100%;
   height: 100%;
@@ -452,8 +452,8 @@ span.studio-two {
   transition: background-color 250ms var(--o-transition-timing-function);
 }
 
-.follow-li:hover,
-.follow-li:focus {
+.follow__icon:hover,
+.follow__icon:focus {
   background: var(--address-color);
 }
 
@@ -806,7 +806,7 @@ textarea {
 }
 /* Footer подпишись */
 
-.footer-subs input {
+.follow__label input {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -818,7 +818,7 @@ textarea {
   padding-left: 16px;
   outline: transparent;
 }
-.button-tw {
+.follow__button {
   background-color: var(--address-color);
   color: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -830,7 +830,7 @@ textarea {
   text-align: center;
   margin-left: 12px;
 }
-.subs {
+.button-icon {
   margin-left: 10px;
   margin-bottom: -5px;
 }
