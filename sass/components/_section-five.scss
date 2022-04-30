@@ -7,10 +7,12 @@
 }
 .emblem-list {
   margin-right: 0;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
-.emblem-list:not(:last-child) {
-  margin-right: 30px;
-}
+
 .emblem-list__li {
   width: 170px;
   height: 92px;
@@ -26,9 +28,10 @@
 
   transition: border 250ms var(--o-transition-timing-function),
     fill 250ms var(--o-transition-timing-function);
-}
-.emblem-list__li:hover,
-.emblem-list__li:focus {
-  border: 1px solid #2196f3;
-  fill: var(--address-color);
+
+  &:hover,
+  &:focus {
+    border: 1px solid #2196f3;
+    fill: var(--address-color);
+  }
 }

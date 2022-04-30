@@ -60,10 +60,12 @@
   border-radius: 50%;
   margin-right: 0x;
   padding: 0;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
-.follow__nav:not(:last-child) {
-  margin-right: 10px;
-}
+
 .follow__icon {
   display: flex;
   width: 100%;
@@ -74,12 +76,13 @@
   border-radius: 50%;
   fill: var(--icon-colors);
   transition: background-color 250ms var(--o-transition-timing-function);
+
+  &:hover,
+  &:focus {
+    background: var(--address-color);
+  }
 }
 
-.follow__icon:hover,
-.follow__icon:focus {
-  background: var(--address-color);
-}
 /* Footer подпишись */
 
 .follow__label input {

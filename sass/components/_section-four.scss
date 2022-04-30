@@ -46,10 +46,12 @@
   height: 44px;
   margin-right: 0px;
   border-radius: 50%;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
-.icon-media:not(:last-child) {
-  margin-right: 10px;
-}
+
 .icon-media__list {
   display: flex;
   justify-content: center;
@@ -61,9 +63,10 @@
 
   transition: background-color 250ms var(--o-transition-timing-function),
     fill 250ms var(--o-transition-timing-function);
-}
-.icon-media__list:hover,
-.icon-media__list:focus {
-  background-color: var(--address-color);
-  fill: var(--icon-colors);
+
+  &:hover,
+  &:focus {
+    background-color: var(--address-color);
+    fill: var(--icon-colors);
+  }
 }

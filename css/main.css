@@ -226,19 +226,18 @@ span.studio-two {
   transition: color 250ms var(--o-transition-timing-function), background-color 250ms var(--o-transition-timing-function), box-shadow 250ms var(--o-transition-timing-function);
 }
 
-.portfolio__buttons:nth-child(-n + 4) {
-  margin-right: 8px;
-}
-
 .button.secondary:not(:first-child) {
   margin-right: 0;
 }
 
-.button.secondary:hover,
-.button.secondary:focus {
+.button.secondary:hover, .button.secondary:focus {
   color: #ffffff;
   background-color: var(--address-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio__buttons:nth-child(-n + 4) {
+  margin-right: 8px;
 }
 
 /*Кнопка футера*/
@@ -431,8 +430,7 @@ span.studio-two {
   transition: background-color 250ms var(--o-transition-timing-function), fill 250ms var(--o-transition-timing-function);
 }
 
-.icon-media__list:hover,
-.icon-media__list:focus {
+.icon-media__list:hover, .icon-media__list:focus {
   background-color: var(--address-color);
   fill: var(--icon-colors);
 }
@@ -466,8 +464,7 @@ span.studio-two {
   transition: border 250ms var(--o-transition-timing-function), fill 250ms var(--o-transition-timing-function);
 }
 
-.emblem-list__li:hover,
-.emblem-list__li:focus {
+.emblem-list__li:hover, .emblem-list__li:focus {
   border: 1px solid #2196f3;
   fill: var(--address-color);
 }
@@ -556,8 +553,7 @@ span.studio-two {
   transition: background-color 250ms var(--o-transition-timing-function);
 }
 
-.follow__icon:hover,
-.follow__icon:focus {
+.follow__icon:hover, .follow__icon:focus {
   background: var(--address-color);
 }
 
@@ -678,6 +674,11 @@ span.studio-two {
   transition: border-color 250ms var(--o-transition-timing-function);
 }
 
+.form-title input:hover, .form-title input:focus {
+  border-color: var(--address-color);
+  transition: border-color 250ms var(--o-transition-timing-function);
+}
+
 .form-icon {
   display: flex;
   align-items: center;
@@ -688,12 +689,6 @@ span.studio-two {
   bottom: 11px;
   fill: #000000;
   transition: fill 250ms var(--o-transition-timing-function);
-}
-
-.form-title input:hover,
-.form-title input:focus {
-  border-color: var(--address-color);
-  transition: border-color 250ms var(--o-transition-timing-function);
 }
 
 .form-title input:hover ~ .form-icon,
@@ -720,8 +715,7 @@ span.studio-two {
   transition: border-color 250ms var(--o-transition-timing-function);
 }
 
-.form-title textarea:hover,
-.form-title textarea:focus {
+.form-title textarea:hover, .form-title textarea:focus {
   border-color: var(--address-color);
   outline: none;
 }

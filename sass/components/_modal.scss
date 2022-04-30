@@ -73,10 +73,12 @@
   flex-direction: column;
   margin-bottom: 10px;
   position: relative;
+
+  &:nth-child(5) {
+    margin-bottom: 0;
+  }
 }
-.form-title:nth-child(5) {
-  margin-bottom: 0;
-}
+
 .form-title label {
   margin-bottom: 4px;
   color: #757575;
@@ -96,6 +98,12 @@
   cursor: pointer;
   outline: transparent;
   transition: border-color 250ms var(--o-transition-timing-function);
+
+  &:hover,
+  &:focus {
+    border-color: var(--address-color);
+    transition: border-color 250ms var(--o-transition-timing-function);
+  }
 }
 
 .form-icon {
@@ -109,11 +117,7 @@
   fill: #000000;
   transition: fill 250ms var(--o-transition-timing-function);
 }
-.form-title input:hover,
-.form-title input:focus {
-  border-color: var(--address-color);
-  transition: border-color 250ms var(--o-transition-timing-function);
-}
+
 .form-title input:hover ~ .form-icon,
 .form-title input:focus ~ .form-icon {
   fill: var(--address-color);
@@ -137,15 +141,15 @@
   letter-spacing: 0.01em;
 
   transition: border-color 250ms var(--o-transition-timing-function);
-}
-.form-title textarea:hover,
-.form-title textarea:focus {
-  border-color: var(--address-color);
-  outline: none;
-}
 
-.form-title textarea::placeholder {
-  color: rgba(117, 117, 117, 0.5);
+  &:hover,
+  &:focus {
+    border-color: var(--address-color);
+    outline: none;
+  }
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 textarea {
@@ -216,9 +220,10 @@ textarea {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   transition: background-color 250ms var(--o-transition-timing-function);
-}
-.form__button:hover {
-  background-color: #188ce8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+
+  &:hover {
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
 }
