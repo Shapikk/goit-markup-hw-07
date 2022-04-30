@@ -1,0 +1,2 @@
+:root{--primery-text-color: #757575;--title-text-color: #212121;--address-color: #2196f3;--icon-color: #757575;--icon-colors: #ffffff;--insta-color: #afb1b8;--o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)}h2,h3{color:var(--title-text-color);margin-top:0}.list{list-style:none;padding:0;margin:0}body{color:var(--primery-text-color);background-color:#ffffff;font-family:Roboto, sans-serif;letter-spacing:0.03em;font-size:16px;line-height:1.18}.section{padding-top:94px;padding-bottom:94px}
+/*# sourceMappingURL=main.min.css.map */
